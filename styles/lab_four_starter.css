@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .remove-assignment-content {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -12,17 +18,21 @@
   background-color: #403d58;
   color: #fff;
   height: 100vh;
+  position: relative;
+
 }
 
 .content-container {
   background-color: #dbd56e;
   height: 600px;
+  position: relative;
 }
 
 .accordion-container {
   background-color: #fc7753;
   color: #fff;
   height: 600px;
+  position: relative;
 }
 
 .footer-container {
