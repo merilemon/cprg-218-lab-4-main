@@ -15,11 +15,16 @@
 }
 
 .hero-container {
-  background-color: #403d58;
   color: #fff;
   height: 100vh;
   position: relative;
+  display: flex;
+}
 
+#hero-banner {
+  img {
+    width: 100%;
+  }
 }
 
 .content-container {
