@@ -1,10 +1,3 @@
-/* footer date */
-
-const d = new Date()
-let year = d.getFullYear
-document.getElementById ("yr").innerHTML = year
-
-
 /* accordion button changing */ 
 document.addEventListener('DOMContentLoaded', function() {
     var summaries = document.querySelectorAll('details summary');
@@ -22,3 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+/* footer date */
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById('yr').innerHTML = year;
