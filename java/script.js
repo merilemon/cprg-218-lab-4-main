@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var details = document.querySelector('details');
-    var summary = details.querySelector('summary');
-    var icon = summary.querySelector('.icon');
+    var summaries = document.querySelectorAll('details summary');
 
-    summary.addEventListener('click', function() {
-      if (details.open) {
-        icon.innerHTML = '<i class="fas fa-plus"></i>'; // Change to plus icon when open
-      } else {
-        icon.innerHTML = '<i class="fas fa-minus"></i>'; // Change to minus icon when closed
-      }
+    summaries.forEach(function(summary) {
+      summary.addEventListener('click', function() {
+        var icon = this.querySelector('i');
+
+        if (this.parentElement.open) {
+          icon.className = 'fas fa-plus'; // Change to plus icon when closed
+        } else {
+          icon.className = 'fas fa-minus'; // Change to minus icon when open
+        }
+      });
     });
   });
