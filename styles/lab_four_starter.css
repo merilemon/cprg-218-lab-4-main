@@ -95,15 +95,16 @@ h4 {
 
 /*ACCORDION */
 
+/* CSS */
 .accordion-container {
-  background-color: #fc7753;
-  color: #fff;
-  height: 600px;
-  position: relative;
+  width: 100%;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
   background-color: #f1f1f1;
   color: #444;
   cursor: pointer;
@@ -113,11 +114,9 @@ h4 {
   border: none;
   outline: none;
   transition: 0.4s;
-  overflow: hidden;
 }
 
-/* Style the accordion content panel. Note: hidden by default */
-.panel {
+.accordion-panel {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -125,18 +124,11 @@ h4 {
   transition: max-height 0.2s ease-out;
 }
 
-/* Active class to toggle between showing and hiding the panel */
-.accordion.active {
+.accordion-button.active {
   background-color: #ccc;
 }
 
-/* Change arrow icon when panel is active */
-.accordion.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-/* Show panel when active */
-.accordion.active + .panel {
+.accordion-button.active + .accordion-panel {
   max-height: 500px; /* Set to a value larger than the panel's height */
 }
 
