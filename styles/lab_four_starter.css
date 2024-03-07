@@ -12,9 +12,21 @@ h1 {
   line-height: .9;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
 h2 {
-  font-family: "Roboto";
   color: #353d5e;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 3;
+}
+
+h4 {
+  font-weight: 100;
 }
 
 .remove-assignment-content {
@@ -26,7 +38,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/* HERO SECTION */
 .hero-container {
   color: #fff;
   height: 100vh;
@@ -51,17 +63,81 @@ h2 {
   text-align: center;
 }
 
+/* CONTENT */
 .content-container {
-  background-color: #dbd56e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+  background-color: #fff;
   height: 600px;
-  position: relative;
+  gap: 50px;
 }
+
+#content {
+  height: 500px;
+  img {
+    height: 100%;
+  }
+}
+
+#content-text {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#content-cast {
+  display: flex;
+  flex-direction: column;
+}
+
+/*ACCORDION */
 
 .accordion-container {
   background-color: #fc7753;
   color: #fff;
   height: 600px;
   position: relative;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Active class to toggle between showing and hiding the panel */
+.accordion.active {
+  background-color: #ccc;
+}
+
+/* Change arrow icon when panel is active */
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Show panel when active */
+.accordion.active + .panel {
+  max-height: 500px; /* Set to a value larger than the panel's height */
 }
 
 .footer-container {
