@@ -95,42 +95,13 @@ h4 {
 
 /*ACCORDION */
 
-/* CSS */
 .accordion-container {
-  width: 100%;
+  background-color: #fc7753;
+  color: #fff;
+  height: 600px;
+  position: relative;
 }
 
-.accordion-item {
-  margin-bottom: 10px;
-}
-
-.accordion-button {
-  background-color: #f1f1f1;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.accordion-panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.accordion-button.active {
-  background-color: #ccc;
-}
-
-.accordion-button.active + .accordion-panel {
-  max-height: 500px; /* Set to a value larger than the panel's height */
-}
 
 .footer-container {
   background-color: #f2efea;
