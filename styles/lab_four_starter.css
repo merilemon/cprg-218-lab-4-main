@@ -173,7 +173,7 @@ summary::-webkit-details-marker {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
